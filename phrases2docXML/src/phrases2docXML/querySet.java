@@ -9,6 +9,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Random;
 
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
+
 
 
 public class querySet {
@@ -34,6 +37,7 @@ public class querySet {
 		
 		for(int i=0;i<frase.length; i++)
 		{
+			 SolrServer server = new HttpSolrServer("http://localhost:8983/solr/thesaurus");
 			String[] f= frase[i].split("\\s+");			
 			Random rand= new Random();
 			if(f.length>2)

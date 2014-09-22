@@ -42,10 +42,10 @@ public class phrases2doc {
 	//for(int j=0;j<19;j++){	
 		
 		//int nomefile=j+1;
-		File f=new File("C:\\Users\\Windows\\Desktop\\corpus\\corpus artigianale\\corpusEconomia.xml");
-		String content = readFile("C:\\Users\\Windows\\Desktop\\corpus\\wikicorpus\\wikipedia_economia.txt", StandardCharsets.UTF_8);	
+		File f=new File("C:\\Users\\Windows\\Desktop\\corpus\\corpus artigianale\\corpus2.xml");
+		String content = readFile("C:\\Users\\Windows\\Desktop\\corpus\\corpus artigianale\\corpus2.txt", StandardCharsets.UTF_8);	
 		String[] frase=content.split("\\.");
-		String nome=nomeid[7];	
+		String nome=nomeid[4];	
 			
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
